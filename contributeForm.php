@@ -166,7 +166,7 @@ if(isset($_FILES) && (bool) $_FILES) {
 	} else { 
 		
 		echo "<p>mail could not be sent!</p>"; 
-
+		header('Location: failedToSent.php');exit();
 	} 
 
 }	
